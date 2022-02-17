@@ -1,0 +1,63 @@
+@keyframes titles {
+    0% {
+        color: rgb(122, 124, 128);
+        text-shadow: none;
+    }
+    5%{
+        color: rgb(235, 243, 255);
+        text-shadow: 0px 0px 10px,0px 0px 50px,0px 0px 100px;
+    }
+    10% {
+        color: rgb(122, 124, 128);
+        text-shadow: none;
+    }
+    15%{
+        color: rgb(235, 243, 255);
+        text-shadow: 0px 0px 10px,0px 0px 50px,0px 0px 100px;
+    }
+    20% {
+        color: rgb(122, 124, 128);
+        text-shadow: none;
+    }
+    25%{
+        color: rgb(235, 243, 255);
+        text-shadow: 0px 0px 10px,0px 0px 50px,0px 0px 100px;
+    }
+    30% {
+        color: rgb(122, 124, 128);
+        text-shadow: none;
+    }
+    35%{
+        color: rgb(235, 243, 255);
+        text-shadow: 0px 0px 10px,0px 0px 50px,0px 0px 100px;
+    }
+    60% {
+        color: rgb(122, 124, 128);
+        text-shadow: none;
+    }
+    80%{
+        color: rgb(235, 243, 255);
+        text-shadow: 0px 0px 10px,0px 0px 50px,0px 0px 100px;
+    }
+}
+
+#Title{
+    color: rgb(235, 243, 255);
+    font-size:12vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    padding-left: 50px;
+    text-shadow: 0px 0px 10px,0px 0px 50px,0px 0px 100px;
+    animation-name: titles;
+    animation-duration: 2s;
+    animation-timing-function: step-start;
+}
+
+#Title:hover{
+    color: rgb(122, 124, 128);
+    text-shadow: none;
+}
+
+#HTML{
+    background-color: rgb(20, 19, 31);
+}

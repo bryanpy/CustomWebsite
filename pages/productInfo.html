@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Departmental Store</title>
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/productinfo.css">
+</head>
+<body>
+
+<div id="header-container">
+  <h1 id="header-text">Store</h1>
+  <input type="text" placeholder="Search" id="header-search">
+  <button class="header-buttons">Home</button>
+  <button class="header-buttons">Products</button>
+  <button class="header-buttons">About Us</button>
+  <button class="header-buttons">Contact Us</button>
+</div>
+
+<div id="main">
+  <div style="display: flex; flex-direction: row; align-items: center">
+    <img id="product-image" src="../assets/productPictures/Alexa.jpg"/>
+    <div id="product-info">
+      <h2 id="product-name" class="text">Product Name</h2>
+      <br>
+      <h2 id="product-description" class="text">Description</h2>
+      <br>
+      <h2 id="product-rating" class="text">🌑🌑🌑🌑🌑</h2>
+      <br>
+      <h2 id="product-price" class="text">Price?</h2>
+      <button class="product-button">Buy Now</button>
+      <button class="product-button">Add to cart</button>
+    </div>
+  </div>
+  <div id="product-suggestion-container">
+    <h1 id="product-suggestion-header">Suggestions</h1>
+    <div id="product-suggestion">
+      <img id="product-suggestion-image" src="../assets/productPictures/Alexa.jpg">
+      <div id="product-suggestion-text" style="margin-left: 100px">
+        <h2 id="product-suggestion-name" class="text">Product Name</h2>
+        <br>
+        <h2 id="product-suggestion-price" class="text">Price</h2>
+        <br>
+        <h2 id="product-suggestion-description" class="text">Description</h2>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="../scripts/productInfo.js"></script>
+</body>
+</html>

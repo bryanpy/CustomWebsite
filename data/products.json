@@ -1,0 +1,18 @@
+{
+  "Alexa": {"price":300,"category":["tech"],"rate":4,"description": "Echo Dot (3rd Gen, 2018 release) - Smart speaker with Alexa - Charcoal"},
+  "Bag1":{"price":200,"category":["styl"],"rate":4.5,"description": "HYC00 Travel Duffel Bag, Sports Tote Gym Bag, Shoulder Weekender Overnight Bag for Women"},
+  "Bag2":{"price":300,"category":["styl"],"rate":5,"description": "Adidas Alliance II Sackpack, Black, One Size"},
+  "Bike":{"price":100,"category":["styl","acce"],"rate":3.5,"description": "Huffy Hardtail Mountain Bike, Stone Mountain 26 inch, 21-Speed, Lightweight, Dark Blue"},
+  "Camera":{"price":124,"category":["tech"],"rate":3.7,"description": "Digital Camera, FHD 1080P Digital Camera for Kids Video Camera with 32GB SD Card 16X Digital Zoom, Compact Point and Shoot Camera Portable Small Camera for Teens Students Boys Girls Seniors(Black)"},
+  "Glasses":{"price":260,"category":["styl"],"rate":4.9,"description": "Gaoye Blue Light Blocking Glasses - 3 Pack Fashion Square Fake Eyeglasses, Anti UV Ray Computer Gaming Glasses, Blue Blockers Glasses for Women/Men, Matte Black+Leopard+Transparent"},
+  "Headphones":{"price":450,"category":["tech"],"rate":4.3,"description": "Sony ZX Series Wired On-Ear Headphones, Black MDR-ZX110"},
+  "Lipstick":{"price":130,"category":[""],"rate":3.8,"description": "Wet n wild Silk Finish Lip Stick, Just Garnet, 0.13 Ounce"},
+  "Plant":{"price":340,"category":["furn"],"rate":3,"description": "Fake Succulent, Mini Succulents Plants Artificial in Black Modern Human Shaped Ceramic Pots Cute Desk Decor Desk Plant for Office Decor for Women, Cute Fake Plants Bathroom Decor 2PCS"},
+  "Shoes":{"price":540,"category":["styl"],"rate":3.8,"description": "Bruno Marc Men's Leather Lined Dress Oxfords Shoes"},
+  "SmartWatch":{"price":950,"category":["tech"],"rate":4.2,"description": "Smart Watch for Men Women, 2022 Fitness Tracker 1.69\" Touch Screen Smartwatch Fitness Watch 25 Sports IP68 Waterproof, Heart Rate/Sleep Monitor/Pedometer/Calories, Activity Tracker for Android iPhone"},
+  "Stool":{"price":340,"category":["furn"],"rate":4,"description": "Folding Step Stool - The Lightweight Step Stool is Sturdy Enough to Support Adults and Safe Enough for Kids. Opens Easy with One Flip. Great for Kitchen, Bathroom, Bedroom, Kids or Adults."},
+  "WaterBottle":{"price":580,"category":["acce"],"rate":5,"description": "IRON °FLASK Sports Water Bottle - 40 Oz, 3 Lids (Straw Lid), Leak Proof, Vacuum Insulated Stainless Steel, Double Walled, Thermo Mug, Metal Canteen"},
+  "Watch":{"price":220,"category":["tech"],"rate":4.7,"description": "Casio F91W-1 Classic Resin Strap Digital Sport Watch"},
+  "IPhone":{"price":220,"category":["tech"],"rate":4.5,"description": "Apple iPhone 12, 64GB, Green - Unlocked (Renewed Premium)"},
+  "Mouse":{"price":560,"category":["tech"],"rate":4.3,"description": "Logitech M510 Wireless Computer Mouse for PC with USB Unifying Receiver - Graphite"}
+}

@@ -5,32 +5,37 @@
     <meta charset="UTF-8">
     <title>Departmental Store</title>
     <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/d42310b2b3.css" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/d42310b2b3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+
+<div id="main-container">
     <div id="header-container">
-        <h1 id="header-text">Store</h1>
-        <div>
-            <input type="text" placeholder="Search" id="header-search"/>
-            <i class="fa-sharp fa-solid fa-magnifying-glass" style="margin-left: 10px;color: white" id="search-button"></i>
-        </div>
+        <div id="header-icon">Mr.Cart</div>
         <div id="header-button-container">
-            <button class="header-buttons">Home</button>
-            <button class="header-buttons">Categories</button>
-            <button class="header-buttons">Cart 🛒</button>
-            <button class="header-buttons">About Us</button>
-            <button class="header-buttons">Contact Us</button>
+            <button class="header-buttons" onclick="window.location = '../pages/home.html'">Home</button>
+            <button class="header-buttons" onclick="window.location = '../pages/products.html'">Products</button>
+            <button class="header-buttons">About</button>
+            <button class="header-buttons">Contact</button>
         </div>
     </div>
+    <div style="display: flex;flex-direction: row;margin-top: 75px">
 
-    <div id="banner">
+        <div style="padding:100px">
+            <h1>EVERY THING YOU NEED.</h1>
+            <p>
+                From our humble beginnings as a small discount retailer in Rogers, Ark., Walmart has opened thousands
+                <br> of stores in the U.S. and expanded internationally. Through innovation, we're creating a seamless
+                <br> experience to let customers shop anytime and anywhere online and in stores. We are creating <br>
+                opportunities and bringing value to customers and communities around the globe. Walmart operates <br>
+                approximately 10,500 stores and clubs in 20 countries and eCommerce websites. We employ 2.1 million <br>
+                associates around the world — nearly 1.6 million in the U.S. alone. <br><br>
+                <button onclick="window.location = '../pages/products.html'" id="shopnow">Shop Now</button>
+            </p>
+        </div>
+    <img id="banner-image" src="../assets/Banner.jpg">
     </div>
-
-    <div id="product-grid">
-    </div>
-
-    <script type="module" src="../scripts/home.js"></script>
+</div>
 </body>
 </html>

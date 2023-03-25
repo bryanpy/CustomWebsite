@@ -1,14 +1,14 @@
 :root{
-    --main-color: rgb(51, 51, 70);
-    --back-color:rgb(30, 30, 40);
-    --back-light-color: rgb(37, 37, 49);
-    --main-text:rgb(255,255,255);
+    --main-color: rgb(255, 255, 255);
+    --back-color: rgb(250, 250, 250);
+    --back-light-color: rgba(161, 164, 175, 0.16);
+    --main-text: rgb(0, 0, 0);
 }
 
 *{
     padding: 0;
     margin: 0;
-    font-family: "Arial";
+    font-family: Dubai;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -26,9 +26,11 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 5px 0px 5px 10px;
+    /*margin-bottom: 30px;*/
     align-items: center;
     background-color: var(--back-light-color);
     border-bottom: 30px;
+    box-shadow: 0px 5px 5px #bbbbbb;
 }
 
 #header-button-container{
@@ -36,23 +38,33 @@ body{
 }
 
 #header-text{
-    color: var(--main-text);
+    color: white;
     margin-right: 10px;
     margin-left: 40px;
 }
 
+#header-icon{
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 30px;
+    align-items: center;
+    color: black;
+}
+
 #header-search{
-    outline-color: none;
-    border-style: solid;
-    border-color: var(--main-text);
-    border-width: 2px;
     border-radius: 10px;
+    border-style: none;
+    outline: none;
     padding: 10px;
     background-color: var(--main-color);
     color: var(--main-text);
     width: 400px;
-    /*align-self: stretch;*/
-    /*flex-grow: 1;*/
+    font-size: 15px;
+}
+
+#header-search:focus{
+    scale: 101%;
 }
 
 .header-buttons{
@@ -62,11 +74,13 @@ body{
     font-size: 16px;
     background-color: transparent;
     border: none;
-    color: var(--main-text);
+    color: black;
+    font-size: 20px;
     padding: 7px 10px;
-    transition: 0.5s all;
+    transition: 0.1s all;
     border-radius: 5px;
-    margin: 0px 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
 }
 
 #search-button:hover{
@@ -75,61 +89,26 @@ body{
 }
 
 .header-buttons:hover{
-    background-color: var(--main-color);
+    font-size: 21px;
     border-radius: 15px;
 }
 
-#banner{
-    background-image: url("../assets/Banner.jpg");
-    width: 100%;
-    aspect-ratio: revert;
-}
-
-.product-grid{
-    display: flex;
-    flex-direction: row;
-}
-
-.product-container{
-    display: flex;
-}
-
-.product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width:25%;
-    height:350px;
-    border-color: var(--main-color);
-    border-width: 4px;
-    border-style: solid;
-}
-
-.product-order-button{
-    background-color: var(--main-color);
-    padding: 10px 20px;
-    color: var(--main-text);
-    border-radius: 20px;
+#shopnow{
+    background-color: #6dbeff;
+    color: #fff;
+    border-style: none;
+    padding: 5px 20px 5px 20px;
     font-size: 20px;
-    border: none;
 }
 
-.product-order-button:hover{
-    background-color: var(--back-light-color);
+#shopnow:hover{
+    filter: opacity(0.7);
 }
 
-.product-image{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    align-self: center;
-}
-
-.product-text{
-    text-align: center;
-    margin: 5px 10px;
+#banner-image{
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
 }
 
 .text{

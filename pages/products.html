@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Departmental Store</title>
+    <link rel="stylesheet" href="../styles/products.css">
+    <script src="../scripts/cart.js"></script>
+    <script>
+        let filter = {category:"all",rating:1}
+    </script>
+
+    <script type="module" src="../scripts/products.js"></script>
+</head>
+
+<body>
+    <div id="header-container">
+        <h1 id="header-icon" onclick="window.location = '../pages/home.html'">Mr.Cart</h1>
+        <div>
+            <input type="text" placeholder="Search" id="header-search"/>
+            <i class="fa-sharp fa-solid fa-magnifying-glass" style="margin-left: 10px;color: black" id="search-button"></i>
+        </div>
+        <div id="header-button-container">
+            <button onclick="window.location = '../pages/home.html'" class="header-buttons">Home</button>
+            <button class="header-buttons" style="color: #6dbeff">Products</button>
+            <button onclick="window.location = '../pages/cart.html'" class="header-buttons">Cart 🛒</button>
+        </div>
+    </div>
+
+    <div id="content-container">
+        <div id="side-bar">
+            <h3>Categories</h3>
+            <div>
+                <input type="radio" name="categories" onclick="filter['category'] = 'all'" checked><label> All</label><br>
+                <input type="radio" name="categories" onclick="filter['category'] = 'tech'"><label> Tech</label><br>
+                <input type="radio" name="categories" onclick="filter['category'] = 'acce'"><label> Accessories</label><br>
+                <input type="radio" name="categories" onclick="filter['category'] = 'styl'"><label> Styles</label><br>
+                <input type="radio" name="categories" onclick="filter['category'] = 'furn'"><label> Furniture</label>
+            </div>
+            <br>
+            <h3>Review</h3>
+            <div>
+                <input type="radio" name="rating" onclick="filter['rating'] = '5'">
+                <label>🌕🌕🌕🌕🌕</label><br>
+                <input type="radio" name="rating" onclick="filter['rating'] = '4'">
+                <label>🌕🌕🌕🌕🌑 & up</label><br>
+                <input type="radio" name="rating" onclick="filter['rating'] = '3'">
+                <label>🌕🌕🌕🌑🌑 & up</label><br>
+                <input type="radio" name="rating" onclick="filter['rating'] = '2'">
+                <label>🌕🌕🌑🌑🌑 & up</label><br>
+                <input type="radio" name="rating" onclick="filter['rating'] = '1'" checked>
+                <label>🌕🌑🌑🌑🌑 & up</label>
+            </div>
+        </div>
+        <div id="product-grid">
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

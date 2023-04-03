@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Departmental Store</title>
+  <link rel="stylesheet" href="../styles/cart.css">
+  <script src="../scripts/cart.js"></script>
+  <script type="module" src="../scripts/displayCart.js"></script>
+
+  <script type="module" src="../scripts/products.js"></script>
+</head>
+
+<body>
+<div id="header-container">
+  <h1 id="header-icon" onclick="window.location = '../pages/home.html'">Mr.Cart</h1>
+  <div>
+    <input type="text" placeholder="Search" id="header-search"/>
+    <i class="fa-sharp fa-solid fa-magnifying-glass" style="margin-left: 10px;color: black" id="search-button"></i>
+  </div>
+  <div id="header-button-container">
+    <button onclick="window.location = '../pages/home.html'" class="header-buttons">Home</button>
+    <button onclick="window.location = '../pages/products.html'" class="header-buttons">Products</button>
+    <button onclick="window.location = '../pages/cart.html'" class="header-buttons" style="color: #6dbeff">Cart 🛒</button>
+  </div>
+</div>
+
+<div id="content-container">
+  <div id="cart-grid">
+  </div>
+</div>
+
+<div style="display: flex;flex-direction: row; justify-content: center">
+  <button class="cart-botton-buttons">Check Out</button>
+  <button class="cart-botton-buttons" onclick="clearCart();location.reload();">Clear</button>
+</div>
+
+
+</body>
+</html>

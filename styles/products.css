@@ -46,8 +46,6 @@ body{
 #header-icon{
     height: 60px;
     margin-left: 30px;
-    font-size: 40px;
-    font-weight: 600;
     align-items: center;
     color: black;
 }
@@ -93,23 +91,108 @@ body{
     border-radius: 15px;
 }
 
-#shopnow{
-    background-color: #6dbeff;
-    color: #fff;
-    border-style: none;
-    padding: 5px 20px 5px 20px;
+#content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#side-bar{
+    width: 40%;
+    box-shadow: 1px 0px 5px #bbbbbb;
+    padding:30px;
+}
+
+#side-bar>div{
+    line-height: 1;
+}
+
+#product-grid{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.product-container{
+    display: flex;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    height:550px;
+    background-color: #f6f6f6;
+    box-shadow: 1px 1px 5px #e0e0e0;
+    margin: 10px;
+}
+
+.product-order-button{
+    background-color: #e8e8e8;
+    padding: 10px 20px;
+    color: var(--main-text);
+    border-radius: 20px;
     font-size: 20px;
+    border: none;
+    width: 200px;
+    margin-left: 30px;
 }
 
-#shopnow:hover{
-    filter: opacity(0.7);
+.product-order-button:hover{
+    background-color: var(--back-light-color);
 }
 
-#banner-image{
-    width: 600px;
-    height: 400px;
-    margin-top: 50px;
+.product-image{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+
+    transition: all 0.1s;
 }
+
+.product-image:hover{
+    box-shadow: 3px 3px 3px #969696;
+    scale: 101%;
+}
+
+#product-name{
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 300;
+    transition: all 0.1s;
+}
+
+#product-name:hover{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#product-price{
+    font-size: 20px;
+    width: 10px;
+}
+
+#product-addtocart{
+    font-size: 17px;
+    transition: all 0.1s;
+}
+
+#product-addtocart:hover{
+    scale: 103%;
+}
+
+#product-rating{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.product-text{
+    margin: 5px 20px;
+    text-align: left;
+}
+
+
 
 .text{
     color: var(--main-text);

@@ -1,14 +1,16 @@
 :root{
-    --main-color: rgb(51, 51, 70);
-    --back-color:rgb(30, 30, 40);
-    --back-light-color: rgb(37, 37, 49);
-    --main-text:rgb(255,255,255);
+    --main-color: rgb(255, 255, 255);
+    --back-color: rgb(250, 250, 250);
+    --back-light-color: rgba(161, 164, 175, 0.16);
+    --main-text: rgb(0, 0, 0);
 }
 
 *{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    padding: 0px;
+    margin: 0px;
 }
 
 body{
@@ -17,6 +19,64 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+}
+
+#header-container{
+    display: flex;
+    justify-content: space-between;
+    /*margin-bottom: 30px;*/
+    align-items: center;
+    background-color: var(--back-light-color);
+    border-bottom: 30px;
+    box-shadow: 0px 5px 5px #bbbbbb;
+}
+
+#header-button-container{
+    display: flex;
+}
+
+#header-text{
+    color: white;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+#header-icon{
+    height: 60px;
+    margin-left: 30px;
+    align-items: center;
+    color: black;
+}
+
+#header-search{
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--main-text);
+    width: 400px;
+    font-size: 15px;
+}
+
+#header-search:focus{
+    scale: 101%;
+}
+
+.header-buttons{
+    outline: none;
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding: 7px 10px;
+    transition: 0.1s all;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
 }
 
 #product-image{
@@ -52,8 +112,16 @@ body{
     font-size: 20px;
 }
 
+#header-icon{
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
+    align-items: center;
+    color: black;
+}
+
 .product-button{
-    background-color: var(--main-color);
+    background-color: #cecece;
     padding: 10px 20px;
     color: var(--main-text);
     border-radius: 20px;
@@ -62,14 +130,14 @@ body{
     margin-top: 30px;
 }
 
-#product-order-button:hover{
+.product-button:hover{
     background-color: var(--back-light-color);
 }
 
-#product-suggestion-header{
+#product-suggestion-header,#product-review-header{
     text-align: center;
     color: var(--main-text);
-    background-color: var(--back-light-color);
+    /*background-color: var(--back-light-color);*/
     padding-top: 30px;
 }
 
@@ -78,9 +146,23 @@ body{
     flex-direction: row;
     align-items: center;
     padding: 100px;
-    background-color: var(--back-light-color);
+    /*background-color: var(--back-light-color);*/
 }
 
 #product-suggestion-image{
     width:300px
+}
+
+.product-review-name{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product-review-review{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-review-stars{
+    font-size: 13px;
 }

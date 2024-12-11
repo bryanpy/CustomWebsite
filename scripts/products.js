@@ -1,4 +1,182 @@
-import products from '../data/products.json' assert {type: 'json'};
+var products = {
+    "Alexa": {
+      "price":4999,
+      "category":["tech"],
+      "rate":4,
+      "description": "Echo Dot (3rd Gen, 2018 release) - Smart speaker with Alexa - Charcoal",
+      "reviews": [
+        {"name":"Ankith","text": "very good product defenitly reccomned it","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Bag1":{
+      "price":700,
+      "category":["styl"],
+      "rate":4.5,
+      "description": "HYC00 Travel Duffel Bag, Sports Tote Gym Bag, Shoulder Weekender Overnight Bag for Men and Women",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "extremely fashionable product love it but it is a bit expensive","stars": 3}
+      ]
+    },
+    "Bag2":{
+      "price":3500,
+      "category":["styl"],
+      "rate":5,
+      "description": "Adidas Alliance II Sackpack, Black, One Size, Bag",
+      "reviews": [
+        {"name":"Ruban","text": "Fits for all dresses and styles","stars": 4.5},
+        {"name":"Braden","text": "It is very easy to carry any where","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Bike":{
+      "price":13999,
+      "category":["styl","acce"],
+      "rate":3.5,
+      "description": "Huffy Hardtail Mountain Bike, Stone Mountain 26 inch, 21-Speed, Lightweight, Dark Blue",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Camera":{
+      "price":34000,
+      "category":["tech"],
+      "rate":3.7,
+      "description": "Digital Camera, FHD 1080P Digital Camera for Kids Video Camera with 32GB SD Card 16X Digital Zoom, Compact Point and Shoot Camera Portable Small Camera for Teens Students Boys Girls Seniors(Black)",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Glasses":{
+      "price":10000,
+      "category":["styl"],
+      "rate":4.9,
+      "description": "Gaoye Blue Light Blocking Glasses - 3 Pack Fashion Square Fake Eyeglasses, Anti UV Ray Computer Gaming Glasses, Blue Blockers Glasses for Women/Men, Matte Black+Leopard+Transparent",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Headphones":{
+      "price":4500,
+      "category":["tech"],
+      "rate":4.3,
+      "description": "Sony ZX Series Wired On-Ear Headphones, Black MDR-ZX110",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Lipstick":{
+      "price":800,
+      "category":["styl"],
+      "rate":3.8,
+      "description": "Wet n wild Silk Finish Lip Stick, Just Garnet, 0.13 Ounce",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Plant":{
+      "price":2000,
+      "category":["furn"],
+      "rate":3,
+      "description": "Fake Succulent, Mini Succulents Plants Artificial in Black Modern Human Shaped Ceramic Pots Cute Desk Decor Desk Plant for Office Decor for Women, Cute Fake Plants Bathroom Decor 2PCS",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Shoes":{
+      "price":9000,
+      "category":["styl"],
+      "rate":3.8,
+      "description": "Bruno Marc Men's Leather Lined Dress Oxfords Shoes",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "SmartWatch":{
+      "price":6000,
+      "category":["tech"],
+      "rate":4.2,
+      "description": "Smart Watch for Men Women, 2022 Fitness Tracker 1.69\" Touch Screen Smartwatch Fitness Watch 25 Sports IP68 Waterproof, Heart Rate/Sleep Monitor/Pedometer/Calories, Activity Tracker for Android iPhone",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Stool":{
+      "price":3000,
+      "category":["furn"],
+      "rate":4,
+      "description": "Folding Step Stool - The Lightweight Step Stool is Sturdy Enough to Support Adults and Safe Enough for Kids. Opens Easy with One Flip. Great for Kitchen, Bathroom, Bedroom, Kids or Adults.",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "WaterBottle":{
+      "price":580,
+      "category":["acce"],
+      "rate":5,
+      "description": "IRON °FLASK Sports Water Bottle - 40 Oz, 3 Lids (Straw Lid), Leak Proof, Vacuum Insulated Stainless Steel, Double Walled, Thermo Mug, Metal Canteen",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Watch":{
+      "price":14000,
+      "category":["tech"],
+      "rate":4.7,
+      "description": "Casio F91W-1 Classic Resin Strap Digital Sport Watch",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "IPhone":{
+      "price":99800,
+      "category":["tech"],
+      "rate":4.5,
+      "description": "Apple iPhone 12, 64GB, Green - Unlocked (Renewed Premium)",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    },
+    "Mouse":{
+      "price":2000,
+      "category":["tech"],
+      "rate":4.3,
+      "description": "Logitech M510 Wireless Computer Mouse for PC with USB Unifying Receiver - Graphite",
+      "reviews": [
+        {"name":"Ankith","text": "Really Good Product","stars": 4.5},
+        {"name":"Braden","text": "Really Nice Product, For all ages","stars": 4},
+        {"name":"BoB","text": "It is the best product ever","stars": 3}
+      ]
+    }
+  }
+  
 
 let productGrid = document.getElementById("product-grid")
 let productContainer = document.createElement("div")
@@ -22,7 +200,6 @@ document.addEventListener("keydown", (e)=>{
 
 document.addEventListener("click",(e)=>{
     display()
-
 })
 
 display()
